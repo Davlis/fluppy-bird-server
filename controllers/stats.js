@@ -1,9 +1,14 @@
 const Stats = require('../models/stats.js');
 
-async function getStats(req, res) {
-    res.send('Not implemented');
-}
+module.exports = new class StatsController {
+    constructor() {
+    }
 
-async function createStats(req, res) {
-    res.send('Not implemented');
-}
+    async getStats(req, res) {
+        res.send('Not implemented')
+    }
+
+    async createStat(req, res) {
+        res.send('Not implemented')
+    }
+}();

@@ -11,6 +11,13 @@ const statsSchema = new Schema({
         required: true,
         minlength: 3,
     },
+}, {
+        collection: 'stats',
+        versionKey: false,
+        timestamps: {
+            createdAt: 'created_date',
+            updatedAt: 'updated_date'
+        }
 });
 
 module.exports = statsSchema;
