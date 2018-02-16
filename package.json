@@ -1,0 +1,26 @@
+{
+  "name": "fluppybird-server",
+  "version": "1.0.0",
+  "description": "Server for fluppybird stats system",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davlis/fluppy-bird-server.git"
+  },
+  "keywords": [
+    "fluppy",
+    "bird",
+    "fluppybird",
+    "stats",
+    "system"
+  ],
+  "author": "Dawid Liszka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davlis/fluppy-bird-server/issues"
+  },
+  "homepage": "https://github.com/Davlis/fluppy-bird-server#readme"
+}
