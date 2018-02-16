@@ -5,7 +5,8 @@ module.exports = new class StatsController {
     }
 
     async getStats(req, res) {
-        res.send('Not implemented')
+        const result = await Stats.find();
+        res.send(result);
     }
 
     async createStat(req, res) {
