@@ -17,8 +17,6 @@ module.exports = new class StatsController {
         try {
             const body = req.body;
 
-            console.log(body);
-
             const nickname = body.nickname,
                 score = body.score;
            
