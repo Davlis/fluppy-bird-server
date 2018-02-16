@@ -15,4 +15,4 @@ app.use('/', routes);
 
 mongoose.connect(config.mongo.url, { autoReconnect: true });
 
-app.listen(3000, () => console.log('App listening on port 3000!'));
+app.listen(config.server.port, () => console.log(`App listening on port ${config.server.port}!`));
