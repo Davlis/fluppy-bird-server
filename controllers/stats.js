@@ -5,11 +5,31 @@ module.exports = new class StatsController {
     }
 
     async getStats(req, res) {
-        const result = await Stats.find();
-        res.send(result);
+        try {
+            const result = await Stats.find();
+            res.json({ result });
+        } catch(err) {
+            res.status(500).json({err: err.message });
+        }
     }
 
     async createStat(req, res) {
-        res.send('Not implemented')
+        try {
+            const body = req.body;
+
+            console.log(body);
+
+            const nickname = body.nickname,
+                score = body.score;
+           
+            const result = await Stats.create({
+                nickname,
+                score,
+            });
+
+            res.json({ result });
+        } catch(err) {
+            res.status(500).json({ err: err.message });
+        }
     }
 }();
