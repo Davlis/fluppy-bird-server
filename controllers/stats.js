@@ -1,7 +1,9 @@
 const Stats = require('../models/stats.js');
 
-function name() {
-    console.log(Stats);
+async function getStats(req, res) {
+    res.send('Not implemented');
 }
 
-name();
+async function createStats(req, res) {
+    res.send('Not implemented');
+}
